@@ -1,4 +1,4 @@
-package examen.ejercicio1;
+	package examen.ejercicio1;
 
 import java.awt.Dimension;
 import java.awt.Graphics;
