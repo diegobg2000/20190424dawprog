@@ -6,11 +6,21 @@ public class Ejercicio2 {
 
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
-		
-
+	
 		System.out.println("Escriba el primer numero");
-		int n = 0;  
+		int n ;  
 		n = in.nextInt();
+		
+		try {
+			n=-1;
+		}
+		catch(ArrayIndexOutOfBoundsException excepcion)
+		{
+			System.out.println("Este numero no se encuentra en el rango valido de valores que se puden introducir");
+			
+		}
+		
+	
 		
 		if(n<1) {
 			
@@ -21,7 +31,8 @@ public class Ejercicio2 {
 			}
 			while(n<1);
 
-}		
+}
+	
 		
 		System.out.print("Escriba el segundo numero");
 		int m = 0;
@@ -36,9 +47,12 @@ public class Ejercicio2 {
 			n = in.nextInt();
 			}
 			while(m<1);
+			
 		
 		
 					}
+		
+		
 				
 			
 		}
